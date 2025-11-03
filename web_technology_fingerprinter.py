@@ -43,7 +43,7 @@ TECH_DB = {
         r"Microsoft-IIS(?:/([\d\.]+))?"             : "IIS",
         r"cloudflare"                               : "Cloudflare",
         r"openresty(?:/([\d\.]+))?"                 : "OpenResty",
-        r"LiteSpeed"                                : "LiteSpeed",
+        r"LiteSpeed(?:/([\d\.]+))?"                 : "LiteSpeed",
         r"GWS"                                      : "Google Web Server",
         r"awselb"                                   : "AWS ELB",
         r"Netlify"                                  : "Netlify",
@@ -56,45 +56,46 @@ TECH_DB = {
     # ---- Frameworks & CMS -------------------------------------------
     "framework": {
         r"Django/([\d\.]+)"                         : "Django",
-        r"Laravel"                                  : "Laravel",
-        r"Express"                                  : "Express",
-        r"Ruby on Rails"                            : "Ruby on Rails",
-        r"ASP\.NET"                                 : "ASP.NET",
-        r"Spring"                                   : "Spring",
-        r"Flask"                                    : "Flask",
-        r"FastAPI"                                  : "FastAPI",
-        r"NestJS"                                   : "NestJS",
-        r"CodeIgniter"                              : "CodeIgniter",
-        r"Symfony"                                  : "Symfony",
-        r"Phusion Passenger"                        : "Phusion Passenger",
-        r"WordPress"                                : "WordPress",
-        r"Joomla"                                   : "Joomla",
-        r"Drupal"                                   : "Drupal",
-        r"Magento"                                  : "Magento",
-        r"PrestaShop"                               : "PrestaShop",
+        r"Laravel(?:/([\d\.]+))?"                   : "Laravel",
+        r"Express(?:/([\d\.]+))?"                   : "Express",
+        r"Ruby on Rails(?:/([\d\.]+))?"             : "Ruby on Rails",
+        r"ASP\.NET(?:/([\d\.]+))?"                  : "ASP.NET",
+        r"Spring(?:/([\d\.]+))?"                    : "Spring",
+        r"Flask(?:/([\d\.]+))?"                     : "Flask",
+        r"FastAPI(?:/([\d\.]+))?"                   : "FastAPI",
+        r"NestJS(?:/([\d\.]+))?"                    : "NestJS",
+        r"CodeIgniter(?:/([\d\.]+))?"               : "CodeIgniter",
+        r"Symfony(?:/([\d\.]+))?"                   : "Symfony",
+        r"Phusion Passenger(?:/([\d\.]+))?"         : "Phusion Passenger",
+        r"WordPress(?:/([\d\.]+))?"                 : "WordPress",
+        r"Joomla(?:!?\s*([\d\.]+))?"                : "Joomla",
+        r"Drupal(?:/([\d\.]+))?"                    : "Drupal",
+        r"Magento(?:/([\d\.]+))?"                   : "Magento",
+        r"PrestaShop(?:/([\d\.]+))?"                : "PrestaShop",
         r"Shopify"                                  : "Shopify",
-        r"Ghost(?:\.org)?"                          : "Ghost",
-        r"Strapi"                                   : "Strapi",
-        r"SvelteKit"                                : "SvelteKit",
-        r"Gatsby"                                   : "Gatsby",
-        r"Hugo"                                     : "Hugo",
-        r"Next\.js"                                 : "Next.js",
-        r"Nuxt\.js"                                 : "Nuxt.js",
+        r"Ghost(?:\.org)?(?:/([\d\.]+))?"           : "Ghost",
+        r"Strapi(?:/([\d\.]+))?"                    : "Strapi",
+        r"SvelteKit(?:/([\d\.]+))?"                 : "SvelteKit",
+        r"Gatsby(?:/([\d\.]+))?"                    : "Gatsby",
+        r"Hugo(?:/([\d\.]+))?"                      : "Hugo",
+        r"Next\.js(?:/([\d\.]+))?"                  : "Next.js",
+        r"Nuxt\.js(?:/([\d\.]+))?"                  : "Nuxt.js",
         r"Wix"                                      : "Wix",
         r"Squarespace"                              : "Squarespace",
     },
 
     # ---- Databases --------------------------------------------------
     "database": {
-        r"mysql|mariadb"                            : "MySQL/MariaDB",
-        r"postgres|postgresql"                      : "PostgreSQL",
-        r"mongodb"                                  : "MongoDB",
-        r"sqlite"                                   : "SQLite",
-        r"oracle"                                   : "Oracle",
-        r"redis"                                    : "Redis",
-        r"couchdb"                                  : "CouchDB",
-        r"cassandra"                                : "Cassandra",
-        r"firebase"                                 : "Firebase",
+        r"mysql(?:/([\d\.]+))?"                     : "MySQL",
+        r"mariadb(?:/([\d\.]+))?"                   : "MariaDB",
+        r"postgres(?:ql)?(?:/([\d\.]+))?"           : "PostgreSQL",
+        r"mongodb(?:/([\d\.]+))?"                   : "MongoDB",
+        r"sqlite(?:/([\d\.]+))?"                    : "SQLite",
+        r"oracle(?:/([\d\.]+))?"                    : "Oracle",
+        r"redis(?:/([\d\.]+))?"                     : "Redis",
+        r"couchdb(?:/([\d\.]+))?"                   : "CouchDB",
+        r"cassandra(?:/([\d\.]+))?"                 : "Cassandra",
+        r"firebase(?:/([\d\.]+))?"                  : "Firebase",
     },
 
     # ---- JavaScript Libraries ---------------------------------------
@@ -104,38 +105,38 @@ TECH_DB = {
         r"Vue(?:\.js)?(?:/([\d\.]+))?"              : "Vue.js",
         r"Angular(?:JS)?(?:/([\d\.]+))?"            : "Angular",
         r"Bootstrap(?:/([\d\.]+))?"                 : "Bootstrap",
-        r"Alpine\.js"                               : "Alpine.js",
-        r"Tailwind"                                 : "Tailwind CSS",
-        r"Three\.js"                                : "Three.js",
-        r"D3\.js"                                   : "D3.js",
-        r"Lodash"                                   : "Lodash",
-        r"Moment\.js"                               : "Moment.js",
-        r"GSAP"                                     : "GSAP",
-        r"Chart\.js"                                : "Chart.js",
+        r"Alpine\.js(?:/([\d\.]+))?"                : "Alpine.js",
+        r"Tailwind(?: CSS)?(?:/([\d\.]+))?"         : "Tailwind CSS",
+        r"Three\.js(?:/([\d\.]+))?"                 : "Three.js",
+        r"D3\.js(?:/([\d\.]+))?"                    : "D3.js",
+        r"Lodash(?:/([\d\.]+))?"                    : "Lodash",
+        r"Moment\.js(?:/([\d\.]+))?"                : "Moment.js",
+        r"GSAP(?:/([\d\.]+))?"                      : "GSAP",
+        r"Chart\.js(?:/([\d\.]+))?"                 : "Chart.js",
     },
 
     # ---- Programming Languages --------------------------------------
     "language": {
         r"PHP(?:/([\d\.]+))?"                       : "PHP",
-        r"Node\.js"                                 : "Node.js",
+        r"Node\.js(?:/([\d\.]+))?"                  : "Node.js",
         r"Go(?:/([\d\.]+))?"                        : "Go",
-        r"Java"                                     : "Java",
-        r"\.NET Core"                               : ".NET Core",
-        r"Python"                                   : "Python",
-        r"Ruby"                                     : "Ruby",
+        r"Java(?:/([\d\.]+))?"                      : "Java",
+        r"\.NET Core(?:/([\d\.]+))?"                : ".NET Core",
+        r"Python(?:/([\d\.]+))?"                    : "Python",
+        r"Ruby(?:/([\d\.]+))?"                      : "Ruby",
     },
 
     # ---- Analytics & Other ------------------------------------------
     "other": {
-        r"Google Analytics"                         : "Google Analytics",
+        r"Google Analytics(?:/([\d\.]+))?"          : "Google Analytics",
         r"gtag\.js"                                 : "Google Tag Manager",
         r"fb-root|fbq\("                            : "Facebook Pixel",
-        r"HubSpot"                                  : "HubSpot",
-        r"Hotjar"                                   : "Hotjar",
-        r"Stripe"                                   : "Stripe",
+        r"HubSpot(?:/([\d\.]+))?"                   : "HubSpot",
+        r"Hotjar(?:/([\d\.]+))?"                    : "Hotjar",
+        r"Stripe(?:/([\d\.]+))?"                    : "Stripe",
         r"PayPal"                                   : "PayPal",
-        r"Intercom"                                 : "Intercom",
-        r"Zendesk"                                  : "Zendesk",
+        r"Intercom(?:/([\d\.]+))?"                  : "Intercom",
+        r"Zendesk(?:/([\d\.]+))?"                   : "Zendesk",
     },
 }
 
@@ -188,7 +189,8 @@ class WebTechFingerprinter:
             m = re.search(pattern, text, re.I)
             if m:
                 version = m.group(1) if len(m.groups()) > 0 else None
-                findings.append({"name": name, "version": version})
+                evidence = f"Pattern match: {pattern}"
+                findings.append({"name": name, "version": version, "evidence": evidence})
         return findings
 
     def _detect_from_headers(self, headers: Dict[str, str]) -> Dict[str, List[Dict]]:
@@ -221,7 +223,22 @@ class WebTechFingerprinter:
                 for cat, patterns in TECH_DB.items():
                     result[cat].extend(self._match_group(patterns, script.string))
 
-        # Path-based CMS detection
+        # Additional version extraction from HTML comments and specific tags
+        # Look for version comments in HTML
+        comments = soup.find_all(string=lambda text: isinstance(text, str) and 'version' in text.lower())
+        for comment in comments:
+            for cat, patterns in TECH_DB.items():
+                result[cat].extend(self._match_group(patterns, comment))
+
+        # Check for specific version indicators in meta tags
+        for meta in soup.find_all("meta"):
+            content = meta.get("content", "")
+            name = meta.get("name", "").lower()
+            if "version" in name or "generator" in name:
+                for cat, patterns in TECH_DB.items():
+                    result[cat].extend(self._match_group(patterns, content))
+
+        # Path-based CMS detection with version attempts
         lower_html = html.lower()
         path_signatures = {
             "WordPress": ["/wp-includes/", "/wp-content/", "wp-json", "wordpress"],
@@ -236,7 +253,29 @@ class WebTechFingerprinter:
         }
         for tech, paths in path_signatures.items():
             if any(p in lower_html for p in paths):
-                result["framework"].append({"name": tech, "version": None})
+                # Try to extract version from HTML for these frameworks
+                version = None
+                evidence = f"Path signature: {', '.join([p for p in paths if p in lower_html])}"
+                if tech == "WordPress":
+                    # Look for version in generator meta or comments
+                    gen_meta = soup.find("meta", attrs={"name": re.compile(r"generator", re.I)})
+                    if gen_meta and "WordPress" in gen_meta.get("content", ""):
+                        m = re.search(r"WordPress\s*/?\s*([\d\.]+)", gen_meta.get("content", ""), re.I)
+                        version = m.group(1) if m else None
+                        evidence = f"Generator meta tag: {gen_meta.get('content')}"
+                elif tech == "Joomla":
+                    gen_meta = soup.find("meta", attrs={"name": re.compile(r"generator", re.I)})
+                    if gen_meta and "Joomla" in gen_meta.get("content", ""):
+                        m = re.search(r"Joomla!?\s*([\d\.]+)", gen_meta.get("content", ""), re.I)
+                        version = m.group(1) if m else None
+                        evidence = f"Generator meta tag: {gen_meta.get('content')}"
+                elif tech == "Drupal":
+                    gen_meta = soup.find("meta", attrs={"name": re.compile(r"generator", re.I)})
+                    if gen_meta and "Drupal" in gen_meta.get("content", ""):
+                        m = re.search(r"Drupal\s*([\d\.]+)", gen_meta.get("content", ""), re.I)
+                        version = m.group(1) if m else None
+                        evidence = f"Generator meta tag: {gen_meta.get('content')}"
+                result["framework"].append({"name": tech, "version": version, "evidence": evidence})
 
         return result
 
@@ -281,9 +320,36 @@ class WebTechFingerprinter:
                     ver = self._extract_php_version(resp.text)
                     findings["language"].append({"name": "PHP", "version": ver})
                 if "adminer" in content:
-                    findings["database"].append({"name": "Adminer", "version": None})
+                    # Try to extract Adminer version
+                    m = re.search(r"adminer\s*([\d\.]+)", resp.text, re.I)
+                    ver = m.group(1) if m else None
+                    findings["database"].append({"name": "Adminer", "version": ver})
                 if ".env" in path and any(k in content for k in ["db_", "password", "secret"]):
                     findings["other"].append({"name": "Exposed .env", "version": None})
+
+                # Additional version extraction from active responses
+                # Check for WordPress version in readme.txt or similar
+                if "readme.txt" in path or "wp-" in path:
+                    m = re.search(r"version\s*:\s*([\d\.]+)", resp.text, re.I)
+                    if m:
+                        findings["framework"].append({"name": "WordPress", "version": m.group(1)})
+
+                # Check for Joomla version in administrator/manifests/files/joomla.xml or similar
+                if "joomla" in path.lower():
+                    m = re.search(r"<version>([\d\.]+)</version>", resp.text, re.I)
+                    if m:
+                        findings["framework"].append({"name": "Joomla", "version": m.group(1)})
+
+                # Check for Drupal version in CHANGELOG.txt or similar
+                if "drupal" in path.lower() or "changelog" in path.lower():
+                    m = re.search(r"Drupal\s+([\d\.]+)", resp.text, re.I)
+                    if m:
+                        findings["framework"].append({"name": "Drupal", "version": m.group(1)})
+
+                # General version extraction from headers in active responses
+                for cat, patterns in TECH_DB.items():
+                    for header_name, header_value in resp.headers.items():
+                        findings[cat].extend(self._match_group(patterns, f"{header_name}: {header_value}"))
 
             time.sleep(0.3)
         return dict(findings)
@@ -354,7 +420,8 @@ class WebTechFingerprinter:
 # 4. REPORTING
 # ====================================================================
 def print_banner():
-    logo = "\033[96m" + """
+    try:
+        logo = "\033[96m" + """
     ███╗   ██╗███████╗████████╗    ███████╗██╗███╗   ██╗ ██████╗ ███████╗██████╗ ██████╗ ██████╗ ██╗███╗   ██╗████████╗███████╗██████╗
     ████╗  ██║██╔════╝╚══██╔══╝    ██╔════╝██║████╗  ██║██╔════╝ ██╔════╝██╔══██╗██╔══██╗██╔══██╗██║████╗  ██║╚══██╔══╝██╔════╝██╔══██╗
     ██╔██╗ ██║█████╗     ██║       █████╗  ██║██╔██╗ ██║██║  ███╗█████╗  ██████╔╝██████╔╝██████╔╝██║██╔██╗ ██║   ██║   █████╗  ██████╔╝
@@ -362,13 +429,25 @@ def print_banner():
     ██║ ╚████║███████╗   ██║       ██║     ██║██║ ╚████║╚██████╔╝███████╗██║  ██║██║     ██║  ██║██║██║ ╚████║   ██║   ███████╗██║  ██║
     ╚═╝  ╚═══╝╚══════╝   ╚═╝       ╚═╝     ╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚══════╝╚═╝  ╚═╝╚═╝     ╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝   ╚═╝   ╚══════╝╚═╝  ╚═╝
     """ + "\033[0m"
-    banner = f"""
-{logo}
-    {__tool__} v{__version__}
-    Author: {__author__} | {__country__} | {__date__}
-    {"="*120}
+        banner = f"""
+ {logo}
+     {__tool__} v{__version__}
+     Author: {__author__} | {__country__} | {__date__}
+     {"="*120}
+     """
+        print(banner)
+    except UnicodeEncodeError:
+        # Fallback to ASCII logo if Unicode fails
+        logo = """
+    N E T    F I N G E R P R I N T E R
     """
-    print(banner)
+        banner = f"""
+ {logo}
+     {__tool__} v{__version__}
+     Author: {__author__} | {__country__} | {__date__}
+     {"="*60}
+     """
+        print(banner)
 
 def print_report(report: Dict):
     print_banner()
@@ -383,16 +462,20 @@ def print_report(report: Dict):
     detected = report.get("detected", {})
     order = ["server", "framework", "database", "jslib", "language", "other", "active"]
 
+    total_technologies = sum(len(detected.get(cat, [])) for cat in order)
+    print(f"[+] Total technologies detected: {total_technologies}\n")
+
     for cat in order:
         items = detected.get(cat, [])
         if not items:
             continue
-        print(f"{cat.upper():<12} :")
+        print(f"\033[92m{cat.upper():<12}\033[0m : ({len(items)} found)")
         for it in items:
-            ver = f" (v{it['version']})" if it.get("version") else ""
-            path = f" [{it['path']}]" if it.get("path") else ""
-            title = f" → {it.get('title')}" if it.get("title") else ""
-            print(f"  • {it['name']}{ver}{path}{title}")
+            ver = f" \033[93m(v{it['version']})\033[0m" if it.get("version") else ""
+            path = f" \033[94m[{it['path']}]\033[0m" if it.get("path") else ""
+            title = f" \033[95m→ {it.get('title')}\033[0m" if it.get("title") else ""
+            evidence = f" \033[90m(Evidence: {it.get('evidence', 'detected')})\033[0m" if it.get("evidence") else ""
+            print(f"  • {it['name']}{ver}{path}{title}{evidence}")
         print()
 
 
